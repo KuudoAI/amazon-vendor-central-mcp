@@ -1,0 +1,39 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.KuudoAI/amazon-vendor-central-mcp",
+  "title": "Amazon Vendor Central MCP server (Amazon Vendor Central MCP)",
+  "description": "MCP server for Vendor Central: orders, fulfillment, invoices, and retail analytics.",
+  "websiteUrl": "https://www.kuudo.com/features/amazon-vendor-central-mcp/",
+  "repository": {
+    "url": "https://github.com/KuudoAI/amazon-vendor-central-mcp",
+    "source": "github"
+  },
+  "version": "1.0.0",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://{VENDOR_CENTRAL_HOST}/mcp",
+      "variables": {
+        "VENDOR_CENTRAL_HOST": {
+          "description": "Hostname of your Amazon Vendor Central MCP deployment.",
+          "isRequired": true,
+          "placeholder": "vendor-central.example.com"
+        }
+      },
+      "headers": [
+        {
+          "name": "Authorization",
+          "value": "Bearer {AUTH_TOKEN}",
+          "description": "Kuudo API key or deployment bearer token.",
+          "variables": {
+            "AUTH_TOKEN": {
+              "description": "Kuudo API key or deployment bearer token.",
+              "isRequired": true,
+              "isSecret": true
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

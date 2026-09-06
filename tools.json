@@ -1,0 +1,541 @@
+{
+  "registryName": "io.github.KuudoAI/amazon-vendor-central-mcp",
+  "version": "1.0.0",
+  "featureUrl": "https://www.kuudo.com/features/amazon-vendor-central-mcp/",
+  "connectUrl": "https://<your-host>/mcp",
+  "operationCount": 40,
+  "toolCount": 40,
+  "toolSurfaceNote": "This catalog lists the Vendor-prefixed Selling Partner API resources. Vendor Retail Analytics, Data Kiosk, and A+ Content reach vendor data through shared Selling Partner resources your deployment also exposes. The production server's built-in setup and status tools are not listed here.",
+  "resources": [
+    {
+      "name": "VendorDFI",
+      "count": 1
+    },
+    {
+      "name": "VendorDirectFulfillmentOrders20211228",
+      "count": 3
+    },
+    {
+      "name": "VendorDirectFulfillmentOrdersV1",
+      "count": 3
+    },
+    {
+      "name": "VendorDirectFulfillmentPaymentsV1",
+      "count": 1
+    },
+    {
+      "name": "VendorDirectFulfillmentShipping20211228",
+      "count": 11
+    },
+    {
+      "name": "VendorDirectFulfillmentShippingV1",
+      "count": 9
+    },
+    {
+      "name": "VendorDirectFulfillmentTransactions20211228",
+      "count": 1
+    },
+    {
+      "name": "VendorDirectFulfillmentTransactionsV1",
+      "count": 1
+    },
+    {
+      "name": "VendorInvoicesV1",
+      "count": 1
+    },
+    {
+      "name": "VendorOrdersV1",
+      "count": 4
+    },
+    {
+      "name": "VendorShipmentsV1",
+      "count": 4
+    },
+    {
+      "name": "VendorTransactionStatusV1",
+      "count": 1
+    }
+  ],
+  "tools": [
+    {
+      "name": "VendorDFI_submitInventoryUpdate",
+      "description": "Catalog entry. Runs in your Kuudo deployment, not here. Submits inventory updates for the specified warehouse for either a partial or full feed of inventory items.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": true
+      },
+      "access": "write",
+      "resource": "VendorDFI",
+      "operations": 1
+    },
+    {
+      "name": "VendorDirectFulfillmentOrders20211228_submitAcknowledgement",
+      "description": "Catalog entry. Runs in your Kuudo deployment, not here. Submits acknowledgements for one or more purchase orders.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": true
+      },
+      "access": "write",
+      "resource": "VendorDirectFulfillmentOrders20211228",
+      "operations": 1
+    },
+    {
+      "name": "VendorDirectFulfillmentOrders20211228_getOrders",
+      "description": "Catalog entry. Runs in your Kuudo deployment, not here. Returns a list of purchase orders created during the time frame that you specify.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": true
+      },
+      "access": "read",
+      "resource": "VendorDirectFulfillmentOrders20211228",
+      "operations": 1
+    },
+    {
+      "name": "VendorDirectFulfillmentOrders20211228_getOrder",
+      "description": "Catalog entry. Runs in your Kuudo deployment, not here. Returns purchase order information for the purchaseOrderNumber that you specify.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": true
+      },
+      "access": "read",
+      "resource": "VendorDirectFulfillmentOrders20211228",
+      "operations": 1
+    },
+    {
+      "name": "VendorDirectFulfillmentOrdersV1_submitAcknowledgement",
+      "description": "Catalog entry. Runs in your Kuudo deployment, not here. Submits acknowledgements for one or more purchase orders.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": true
+      },
+      "access": "write",
+      "resource": "VendorDirectFulfillmentOrdersV1",
+      "operations": 1
+    },
+    {
+      "name": "VendorDirectFulfillmentOrdersV1_getOrders",
+      "description": "Catalog entry. Runs in your Kuudo deployment, not here. Returns a list of purchase orders created during the time frame that you specify.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": true
+      },
+      "access": "read",
+      "resource": "VendorDirectFulfillmentOrdersV1",
+      "operations": 1
+    },
+    {
+      "name": "VendorDirectFulfillmentOrdersV1_getOrder",
+      "description": "Catalog entry. Runs in your Kuudo deployment, not here. Returns purchase order information for the purchaseOrderNumber that you specify.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": true
+      },
+      "access": "read",
+      "resource": "VendorDirectFulfillmentOrdersV1",
+      "operations": 1
+    },
+    {
+      "name": "VendorDirectFulfillmentPaymentsV1_submitInvoice",
+      "description": "Catalog entry. Runs in your Kuudo deployment, not here. Submits one or more invoices for a vendor's direct fulfillment orders.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": true
+      },
+      "access": "write",
+      "resource": "VendorDirectFulfillmentPaymentsV1",
+      "operations": 1
+    },
+    {
+      "name": "VendorDirectFulfillmentShipping20211228_createContainerLabel",
+      "description": "Catalog entry. Runs in your Kuudo deployment, not here. Creates a container (pallet) label for the associated shipment package.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": true
+      },
+      "access": "write",
+      "resource": "VendorDirectFulfillmentShipping20211228",
+      "operations": 1
+    },
+    {
+      "name": "VendorDirectFulfillmentShipping20211228_getCustomerInvoices",
+      "description": "Catalog entry. Runs in your Kuudo deployment, not here. Returns a list of customer invoices created during a time frame that you specify.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": true
+      },
+      "access": "read",
+      "resource": "VendorDirectFulfillmentShipping20211228",
+      "operations": 1
+    },
+    {
+      "name": "VendorDirectFulfillmentShipping20211228_getCustomerInvoice",
+      "description": "Catalog entry. Runs in your Kuudo deployment, not here. Returns a customer invoice based on the purchaseOrderNumber that you specify.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": true
+      },
+      "access": "read",
+      "resource": "VendorDirectFulfillmentShipping20211228",
+      "operations": 1
+    },
+    {
+      "name": "VendorDirectFulfillmentShipping20211228_getPackingSlips",
+      "description": "Catalog entry. Runs in your Kuudo deployment, not here. Returns a list of packing slips for the purchase orders that match the criteria specified.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": true
+      },
+      "access": "read",
+      "resource": "VendorDirectFulfillmentShipping20211228",
+      "operations": 1
+    },
+    {
+      "name": "VendorDirectFulfillmentShipping20211228_getPackingSlip",
+      "description": "Catalog entry. Runs in your Kuudo deployment, not here. Returns a packing slip based on the purchaseOrderNumber that you specify.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": true
+      },
+      "access": "read",
+      "resource": "VendorDirectFulfillmentShipping20211228",
+      "operations": 1
+    },
+    {
+      "name": "VendorDirectFulfillmentShipping20211228_submitShipmentConfirmations",
+      "description": "Catalog entry. Runs in your Kuudo deployment, not here. Submits one or more shipment confirmations for vendor orders.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": true
+      },
+      "access": "write",
+      "resource": "VendorDirectFulfillmentShipping20211228",
+      "operations": 1
+    },
+    {
+      "name": "VendorDirectFulfillmentShipping20211228_submitShipmentStatusUpdates",
+      "description": "Catalog entry. Runs in your Kuudo deployment, not here. This operation is only to be used by Vendor-Own-Carrier (VOC) vendors.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": true
+      },
+      "access": "write",
+      "resource": "VendorDirectFulfillmentShipping20211228",
+      "operations": 1
+    },
+    {
+      "name": "VendorDirectFulfillmentShipping20211228_getShippingLabels",
+      "description": "Catalog entry. Runs in your Kuudo deployment, not here. Returns a list of shipping labels created during the time frame that you specify.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": true
+      },
+      "access": "read",
+      "resource": "VendorDirectFulfillmentShipping20211228",
+      "operations": 1
+    },
+    {
+      "name": "VendorDirectFulfillmentShipping20211228_submitShippingLabelRequest",
+      "description": "Catalog entry. Runs in your Kuudo deployment, not here. Creates a shipping label for a purchase order and returns a transactionId for reference.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": true
+      },
+      "access": "write",
+      "resource": "VendorDirectFulfillmentShipping20211228",
+      "operations": 1
+    },
+    {
+      "name": "VendorDirectFulfillmentShipping20211228_getShippingLabel",
+      "description": "Catalog entry. Runs in your Kuudo deployment, not here. Returns a shipping label for the purchaseOrderNumber that you specify.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": true
+      },
+      "access": "read",
+      "resource": "VendorDirectFulfillmentShipping20211228",
+      "operations": 1
+    },
+    {
+      "name": "VendorDirectFulfillmentShipping20211228_createShippingLabels",
+      "description": "Catalog entry. Runs in your Kuudo deployment, not here. Creates shipping labels for a purchase order and returns the labels.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": true
+      },
+      "access": "write",
+      "resource": "VendorDirectFulfillmentShipping20211228",
+      "operations": 1
+    },
+    {
+      "name": "VendorDirectFulfillmentShippingV1_getCustomerInvoices",
+      "description": "Catalog entry. Runs in your Kuudo deployment, not here. Returns a list of customer invoices created during a time frame that you specify.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": true
+      },
+      "access": "read",
+      "resource": "VendorDirectFulfillmentShippingV1",
+      "operations": 1
+    },
+    {
+      "name": "VendorDirectFulfillmentShippingV1_getCustomerInvoice",
+      "description": "Catalog entry. Runs in your Kuudo deployment, not here. Returns a customer invoice based on the purchaseOrderNumber that you specify.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": true
+      },
+      "access": "read",
+      "resource": "VendorDirectFulfillmentShippingV1",
+      "operations": 1
+    },
+    {
+      "name": "VendorDirectFulfillmentShippingV1_getPackingSlips",
+      "description": "Catalog entry. Runs in your Kuudo deployment, not here. Returns a list of packing slips for the purchase orders that match the criteria specified.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": true
+      },
+      "access": "read",
+      "resource": "VendorDirectFulfillmentShippingV1",
+      "operations": 1
+    },
+    {
+      "name": "VendorDirectFulfillmentShippingV1_getPackingSlip",
+      "description": "Catalog entry. Runs in your Kuudo deployment, not here. Returns a packing slip based on the purchaseOrderNumber that you specify.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": true
+      },
+      "access": "read",
+      "resource": "VendorDirectFulfillmentShippingV1",
+      "operations": 1
+    },
+    {
+      "name": "VendorDirectFulfillmentShippingV1_submitShipmentConfirmations",
+      "description": "Catalog entry. Runs in your Kuudo deployment, not here. Submits one or more shipment confirmations for vendor orders.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": true
+      },
+      "access": "write",
+      "resource": "VendorDirectFulfillmentShippingV1",
+      "operations": 1
+    },
+    {
+      "name": "VendorDirectFulfillmentShippingV1_submitShipmentStatusUpdates",
+      "description": "Catalog entry. Runs in your Kuudo deployment, not here. This API call is only to be used by Vendor-Own-Carrier (VOC) vendors.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": true
+      },
+      "access": "write",
+      "resource": "VendorDirectFulfillmentShippingV1",
+      "operations": 1
+    },
+    {
+      "name": "VendorDirectFulfillmentShippingV1_getShippingLabels",
+      "description": "Catalog entry. Runs in your Kuudo deployment, not here. Returns a list of shipping labels created during the time frame that you specify.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": true
+      },
+      "access": "read",
+      "resource": "VendorDirectFulfillmentShippingV1",
+      "operations": 1
+    },
+    {
+      "name": "VendorDirectFulfillmentShippingV1_submitShippingLabelRequest",
+      "description": "Catalog entry. Runs in your Kuudo deployment, not here. Creates a shipping label for a purchase order and returns a transactionId for reference.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": true
+      },
+      "access": "write",
+      "resource": "VendorDirectFulfillmentShippingV1",
+      "operations": 1
+    },
+    {
+      "name": "VendorDirectFulfillmentShippingV1_getShippingLabel",
+      "description": "Catalog entry. Runs in your Kuudo deployment, not here. Returns a shipping label for the purchaseOrderNumber that you specify.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": true
+      },
+      "access": "read",
+      "resource": "VendorDirectFulfillmentShippingV1",
+      "operations": 1
+    },
+    {
+      "name": "VendorDirectFulfillmentTransactions20211228_getTransactionStatus",
+      "description": "Catalog entry. Runs in your Kuudo deployment, not here. Returns the status of the transaction indicated by the specified transactionId.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": true
+      },
+      "access": "read",
+      "resource": "VendorDirectFulfillmentTransactions20211228",
+      "operations": 1
+    },
+    {
+      "name": "VendorDirectFulfillmentTransactionsV1_getTransactionStatus",
+      "description": "Catalog entry. Runs in your Kuudo deployment, not here. Returns the status of the transaction indicated by the specified transactionId.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": true
+      },
+      "access": "read",
+      "resource": "VendorDirectFulfillmentTransactionsV1",
+      "operations": 1
+    },
+    {
+      "name": "VendorInvoicesV1_submitInvoices",
+      "description": "Catalog entry. Runs in your Kuudo deployment, not here. Submit new invoices to Amazon.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": true
+      },
+      "access": "write",
+      "resource": "VendorInvoicesV1",
+      "operations": 1
+    },
+    {
+      "name": "VendorOrdersV1_submitAcknowledgement",
+      "description": "Catalog entry. Runs in your Kuudo deployment, not here. Submits acknowledgements for one or more purchase orders.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": true
+      },
+      "access": "write",
+      "resource": "VendorOrdersV1",
+      "operations": 1
+    },
+    {
+      "name": "VendorOrdersV1_getPurchaseOrders",
+      "description": "Catalog entry. Runs in your Kuudo deployment, not here. Returns a list of purchase orders created or changed during the time frame that you specify.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": true
+      },
+      "access": "read",
+      "resource": "VendorOrdersV1",
+      "operations": 1
+    },
+    {
+      "name": "VendorOrdersV1_getPurchaseOrder",
+      "description": "Catalog entry. Runs in your Kuudo deployment, not here. Returns a purchase order based on the purchaseOrderNumber value that you specify.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": true
+      },
+      "access": "read",
+      "resource": "VendorOrdersV1",
+      "operations": 1
+    },
+    {
+      "name": "VendorOrdersV1_getPurchaseOrdersStatus",
+      "description": "Catalog entry. Runs in your Kuudo deployment, not here. Returns purchase order statuses based on the filters that you specify.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": true
+      },
+      "access": "read",
+      "resource": "VendorOrdersV1",
+      "operations": 1
+    },
+    {
+      "name": "VendorShipmentsV1_SubmitShipmentConfirmations",
+      "description": "Catalog entry. Runs in your Kuudo deployment, not here. Submits one or more shipment confirmations for vendor orders.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": true
+      },
+      "access": "write",
+      "resource": "VendorShipmentsV1",
+      "operations": 1
+    },
+    {
+      "name": "VendorShipmentsV1_GetShipmentDetails",
+      "description": "Catalog entry. Runs in your Kuudo deployment, not here. Returns the Details about Shipment, Carrier Details, status of the shipment, container details and other details related to shipment based on the filter parameters value that you specify.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": true
+      },
+      "access": "read",
+      "resource": "VendorShipmentsV1",
+      "operations": 1
+    },
+    {
+      "name": "VendorShipmentsV1_SubmitShipments",
+      "description": "Catalog entry. Runs in your Kuudo deployment, not here. Submits one or more shipment request for vendor Orders.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": true
+      },
+      "access": "write",
+      "resource": "VendorShipmentsV1",
+      "operations": 1
+    },
+    {
+      "name": "VendorShipmentsV1_GetShipmentLabels",
+      "description": "Catalog entry. Runs in your Kuudo deployment, not here. Returns small parcel shipment labels based on the filters that you specify.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": true
+      },
+      "access": "read",
+      "resource": "VendorShipmentsV1",
+      "operations": 1
+    },
+    {
+      "name": "VendorTransactionStatusV1_getTransaction",
+      "description": "Catalog entry. Runs in your Kuudo deployment, not here. Returns the status of the transaction that you specify.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": true
+      },
+      "access": "read",
+      "resource": "VendorTransactionStatusV1",
+      "operations": 1
+    }
+  ]
+}
